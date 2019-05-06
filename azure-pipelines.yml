@@ -10,5 +10,6 @@ pool:
   vmImage: macos-10.13
 
 steps:
+- script: brew install mingw-w64
 - script: make
 - script: make ng.exe
