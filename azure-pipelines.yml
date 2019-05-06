@@ -8,10 +8,8 @@ trigger:
 
 pool:
   vmImage: macos-10.13
-  env: 
-    WIN32_CC: /usr/local/Cellar/mingw-w64/6.0.0_1/bin/i686-w64-mingw32-gcc
 
 steps:
 - script: brew install mingw-w64
-- script: make
+- script: make WIN32_CC=/usr/local/bin/i686-w64-mingw32-gcc
 - script: make ng.exe
