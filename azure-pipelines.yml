@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: Hosted macOS
+  vmImage: macos-10.13
 
 steps:
 - script: make
